@@ -1,0 +1,184 @@
+body{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2377767c' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+    color: #102f44;
+    max-width: 1300px;
+    padding: 0 20px;
+    overflow: auto;
+}
+
+header{
+    background-color: #fffaf2;
+    top:0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo img{
+    height: 100px;
+    width: 120px;
+    margin-left: 50px;
+}
+
+.titulo{
+    color: #102f44;
+}
+
+.menu ul{
+    margin: 0; 
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu li { 
+    flex-grow: 1;
+}
+
+.menu li:hover {
+    background-color: #d5e7d8;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #102f44;
+    justify-items: center ;
+}
+
+@media all and (max-width: 768px){
+    .menu li a {
+        font-size: small; 
+    }
+}
+
+#portada {
+    background: url('../assets/portada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #102f44;
+    padding-top: 160px;
+}
+
+
+
+.contenido{
+    display: grid;
+    justify-content: right;
+    margin-right: 1.5em;
+}
+
+footer {
+    background-color: #fffaf2;
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+#ConteinerGridRedes { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    /*justify-items: center;
+    /* grid-template-columns: auto auto auto auto;
+         grid-row-gap: 100px;
+    margin-top: 100px;
+    height: 400px;  
+    align-content: center; */
+}
+
+#mapa { 
+    margin-right: 10px;
+    margin-top: 180px;
+}
+
+@media all and (min-width: 768px){
+    #ConteinerGridRedes #mapa{
+        min-height: min-content;
+    }
+}
+
+.adopta{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23e2e2e2' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.formulario{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23e2e2e2' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nosotros{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23e2e2e2' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.equipo{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23e2e2e2' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.colabora{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23e2e2e2' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 80px;
+}
+
+.donaciones{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.donaciones .items{
+    width: 33.33333%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 50px
+}
+
+.donaciones div{
+    font-weight: 600;
+    font-size: 2 rem;
+}
+
+.donaciones p{
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.donaciones .img{
+    width: 100%;
+    max-width: 70px;
+}
+
+.donaciones a{
+    font-size: 1.2rem;
+    margin-top: 1en;
+}
