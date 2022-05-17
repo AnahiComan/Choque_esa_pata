@@ -42,9 +42,6 @@ header{
     flex-grow: 1;
 }
 
-.menu li:hover {
-    background-color: #d5e7d8;
-}
 
 .menu li a {
     display: block;
@@ -52,6 +49,9 @@ header{
     text-decoration: none;
     color: #102f44;
     justify-items: center ;
+}
+.menu li:hover {
+    background-color: #d5e7d8;
 }
 
 @media all and (max-width: 768px){
